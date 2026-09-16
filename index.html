@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width"/>
+        <title>Marble Halls</title>
+        <meta
+            name="description"
+            content="Aelthyna's personal website."
+        />
+        <meta name="author" content="Aelthyna"/>
+
+        <meta
+            property="og:image"
+            content="assets/images/banner.jpg"
+        />
+        <meta
+            property="og:description"
+            content="Aelthyna's personal website."
+        />
+        <meta property="og:title" content="Marble Halls"/>
+
+        <link href="assets/styles/style.css" rel="stylesheet"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="48x48" href="assets/icon/favicon-48.png">
+        <link rel="icon" type="image/png" sizes="64x64" href="assets/icon/favicon-64.png">
+
+        <link rel="icon" href="assets/icon/favicon.ico">
+        
+        <script>
+            const lastUpdated = "September 16, 2026";
+        </script>
+    </head>
+
+    <body>
+        <header>
+            <p id="header-date"></p>
+        </header>
+
+        <div class="title-area">
+            <h1 class="fira-code-bold site-title">
+                <!--<a href="index.html" class="title-link tooltip">
+                    Marble Halls
+                    <span class="tooltiptext">Return to the homepage</span>
+                </a>-->
+                <a href="index.html" class="title-link">Marble Halls</a>
+            </h1>
+            <div class="title-separator"></div>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <!--<li>
+                    <a class="nav-label tooltip" href="index.html">
+                        Home
+                        <span class="tooltiptext">Return to the homepage</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-label tooltip" href="articles.html">
+                        Articles
+                        <span class="tooltiptext">Go to the articles section</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-label tooltip" href="gallery.html">
+                        Gallery
+                        <span class="tooltiptext">Go to the gallery section</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-label tooltip" href="about.html">
+                        About
+                        <span class="tooltiptext">Go to the about section</span>
+                    </a>
+                </li>-->
+                <li><a class="nav-label" href="index.html">Home</a></li>
+                <li><a class="nav-label" href="articles.html">Articles</a></li>
+                <li><a class="nav-label" href="gallery.html">Gallery</a></li>
+                <li><a class="nav-label" href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <div class="content-box">
+            <h2>Greetings, I am <em>Aelthyna</em>.</h2>
+
+            <p>
+                Thank you for paying a visit to my little corner of the web. What you
+                see here is a kind of digital personal diary, a safe haven for all
+                the little things I feel like preserving. If you wish, you can read
+                more about me in the About section.
+            </p>
+
+            <p>
+                Following is a list of the ten most recent articles I have posted
+                on my website.
+            </p>
+
+            <section id="home-feed"></section>
+        </div>
+
+        <footer>
+            <p id="footer-date"></p>
+        </footer>
+
+        <script>
+            const projects = [];
+            const thoughts = [];
+        </script>
+
+        <script src="assets/scripts/essays.js" defer></script>
+        <script src="assets/scripts/projects.js" defer></script>
+        <script src="assets/scripts/reviews.js" defer></script>
+        <script src="assets/scripts/thoughts.js" defer></script>
+        <script src="assets/scripts/homefeed.js" defer></script>
+        <script src="assets/scripts/date.js" defer></script>
+    </body>
+</html>

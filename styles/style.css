@@ -1,0 +1,215 @@
+/* == BASE ==  */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: system-ui;
+    background-color: #484b82;
+}
+
+body {
+    font-family: "Fira Code", sans-serif;
+}
+
+/* == TYPOGRAPHY ==  */
+
+.fira-code {
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+}
+
+.fira-code.bold { font-weight: 700; }
+.fira-code.italic { font-style: italic; }
+
+/* == LAYOUT ==  */
+
+h1 {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    color: #28009f;
+    text-shadow: 3px 3px 1px black;
+}
+
+header,
+footer {
+    font-size: 0.9rem;
+}
+
+/* == COMPONENTS ==  */
+
+.title-area,
+.content-box {
+    max-width: 900px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.content-box {
+    background-color: #70739e;
+    padding: 0 20px 20px 20px;
+    border: 5px solid #123369;
+}
+
+.content-box a {
+    display: inline-block; /* Ensures margin works cleanly */
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+    .content-box {
+        padding: 0 12px 12px 12px;
+        border-width: 3px;
+    }
+}
+
+.site-title {
+        text-align: right;
+        margin: 20px 40px 0 0;
+}
+
+.title-link {
+    color: inherit;          /* Use the h1 color */
+    text-decoration: none;   /* Remove underline */
+}
+
+.title-link:hover {
+    opacity: 0.85;           /* Subtle hover effect */
+    cursor: pointer;         /* Makes it feel clickable */
+    text-shadow: 4px 4px 2px black;
+    color: #3a00ff;
+}
+
+.title-separator {
+    border: none;
+    border-top: 2px solid rgba(255,255,255,0.4);
+    margin-top: 10px;
+}
+
+.section-tag {
+    margin-left: 10px;
+    color: #3c0bec;
+    font-size: 0.9rem;
+}
+
+/* == MEDIA ==  */
+
+img {
+    /* Images are inline elements by default;
+    turning them into block elements allows centering. */
+    display: block;
+
+    /* Horizontally center the image inside its parent container.
+    Therefore, because .context-box is 900px wide, the image will be
+    centered within that 900px. */
+    margin: 0 auto;
+
+    /* Make sure the image never exceeds the width of its container. */
+    max-width: 100%;
+}
+
+.article-image {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.article-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px; /* optional */
+}
+
+.article-image figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #000c18;
+    font-style: italic;
+}
+
+/* == NAVIGATION ==  */
+
+.main-nav {
+    margin: 20px 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 20px 0;
+    gap: 20px; /* Spacing between items */
+}
+
+.main-nav li {
+    position: relative; /* Needed for the separator */
+}
+
+.main-nav li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -10px; /* Half the gap */
+    top: 0;
+    bottom: 0;
+    width: 4px; /* Thickness of the bar */
+    background-color: #28009f; /* Your nav color */
+    opacity: 0.75;
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-size: 1rem;
+    opacity: 0.75;
+}
+
+.nav-label {
+    font-family: "Fira Code", monospace;
+    font-weight: 700;
+    color: #28009f;
+    text-shadow: 2px 2px 1px black;
+}
+
+a.nav-label {
+    font-size: 2rem;
+}
+
+.nav-label:hover {
+    text-shadow: 3px 3px 2px black;
+    color: #3a00ff;
+}
+
+.main-nav a:hover {
+    opacity: 1;
+}
+
+/* == PAGINATION ==  */
+
+#pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#pagination button {
+    background: none;
+    border: none;
+    color: #70739e;
+    font-family: "Fira Code", monospace;
+    font-size: 0.9rem;
+    padding: 4px 8px;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+#pagination button:hover {
+    color: #123369;
+}
+
+#pagination button.active {
+    color: #123369;
+    font-weight: bold;
+    text-decoration: underline;
+}

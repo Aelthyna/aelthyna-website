@@ -67,8 +67,8 @@ footer {
 }
 
 .site-title {
-        text-align: right;
-        margin: 20px 40px 0 0;
+        text-align: center;
+        margin: 20px 0 0 0;
 }
 
 .title-link {
@@ -222,7 +222,6 @@ a.nav-label {
     }
 
     .site-title {
-        text-align: center;
         margin: 10px 0;
     }
 

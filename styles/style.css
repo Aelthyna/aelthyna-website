@@ -59,16 +59,14 @@ footer {
     margin-bottom: 20px;
 }
 
-@media (max-width: 600px) {
-    .content-box {
-        padding: 0 12px 12px 12px;
-        border-width: 3px;
-    }
-}
-
 .site-title {
         text-align: center;
         margin: 20px 0 0 0;
+}
+
+h1.site-title {
+    text-align: center;
+    margin: 20px 0 0 0;
 }
 
 .title-link {

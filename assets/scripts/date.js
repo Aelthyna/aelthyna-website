@@ -12,4 +12,4 @@ if (typeof lastUpdated !== "undefined") {
 }
 
 const year = new Date().getFullYear();
-document.getElementById("footer-date").textContent = `© ${year} Marble Halls`;
+document.getElementById("footer-date").textContent = `© ${year} A Moment's Thought`;

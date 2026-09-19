@@ -1,5 +1,11 @@
 const reviews = [
     {
+        title: "Battle Angel Alita",
+        date: "2026-09-19",
+        url: "articles/reviews/2026-09-19-battle_angel_alita.html",
+        section: "Reviews"
+    },
+    {
         title: "Planetes (manga)",
         date: "2026-08-27",
         url: "articles/reviews/2026-08-27-planetes_manga.html",

@@ -64,11 +64,6 @@ footer {
         margin: 20px 0 0 0;
 }
 
-h1.site-title {
-    text-align: center;
-    margin: 20px 0 0 0;
-}
-
 .title-link {
     color: inherit;          /* Use the h1 color */
     text-decoration: none;   /* Remove underline */
@@ -130,12 +125,14 @@ img {
 /* == NAVIGATION ==  */
 
 .main-nav {
-    margin: 20px 0;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .main-nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 0;
     margin: 20px 0;
@@ -171,7 +168,7 @@ img {
 }
 
 a.nav-label {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .nav-label:hover {

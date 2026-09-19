@@ -209,7 +209,7 @@ a.nav-label {
     text-decoration: underline;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .title-area,
     .content-box {
         margin: 10px auto;

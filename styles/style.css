@@ -143,16 +143,16 @@ img {
     position: relative; /* Needed for the separator */
 }
 
-.main-nav li:not(:last-child)::after {
+/*.main-nav li:not(:last-child)::after {
     content: "";
     position: absolute;
-    right: -10px; /* Half the gap */
+    right: -10px;
     top: 0;
     bottom: 0;
-    width: 4px; /* Thickness of the bar */
-    background-color: #28009f; /* Your nav color */
+    width: 4px;
+    background-color: #28009f;
     opacity: 0.75;
-}
+}*/
 
 .main-nav a {
     text-decoration: none;
@@ -229,9 +229,9 @@ a.nav-label {
         gap: 10px;
     }
 
-    .main-nav li:not(:last-child)::after {
+/*    .main-nav li:not(:last-child)::after {
         display: none;
-    }
+    }*/
 
     a.nav-label {
         font-size: 1.4rem;

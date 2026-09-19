@@ -215,38 +215,43 @@ a.nav-label {
 }
 
 @media (max-width: 600px) {
-    /* 1. Fix Title alignment and spacing */
+    .title-area,
+    .content-box {
+        margin: 10px auto;
+        padding: 0 12px;
+    }
+
     .site-title {
-        text-align: center;   /* Center the header text on mobile */
-        margin: 20px 0 0 0;   /* Remove the 40px right margin */
+        text-align: center;
+        margin: 10px 0;
     }
 
     h1 {
-        font-size: 32px;      /* Scale down title so it fits cleanly */
+        font-size: 2rem;
     }
 
-    /* 2. Fix Navigation bar clipping */
     .main-nav ul {
-        justify-content: center;
-        flex-wrap: wrap;      /* Allow links to stack if screen is too narrow */
-        gap: 8px 12px;        /* Reduce gap between links */
-        padding: 0 10px;      /* Ensure padding on small screens */
+        flex-direction: column;
+        gap: 10px;
     }
 
-    a.nav-label {
-        font-size: 1.25rem;   /* Scale down nav links from 2rem */
-    }
-
-    /* Hide the vertical bar separators on mobile so links wrap cleanly */
     .main-nav li:not(:last-child)::after {
         display: none;
     }
 
-    /* 3. Adjust content container padding */
-    .content-box,
-    .title-area {
-        width: 95%;           /* Give breathing room on edges */
-        margin: 15px auto;
-        padding: 0 15px 15px 15px;
+    a.nav-label {
+        font-size: 1.4rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .content-box {
+        margin: 10px auto;
+    }
+
+    body {
+        font-size: 14px;
     }
 }

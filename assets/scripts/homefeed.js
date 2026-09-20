@@ -1,8 +1,6 @@
 const allArticles = [
-    ...essays,
-    ...projects,
-    ...reviews,
-    ...thoughts
+    ...anime_reviews,
+    ...manga_reviews
 ];
 
 const sorted = allArticles.sort(
@@ -29,18 +27,3 @@ recent.forEach(article => {
 });
 
 list.appendChild(ul);
-
-/* recent.forEach(article => {
-    const item = document.createElement("div");
-    item.className = "article-item";
-    item.innerHTML = `
-        <div class="article-title">
-            <a href="${article.url}">${article.title}</a>
-        </div>
-        <div class="article-meta">
-            <span>${article.date}</span>
-            <span class="section-tag">${article.section}</span>
-        </div>
-    `;
-    list.appendChild(item);
-}); */

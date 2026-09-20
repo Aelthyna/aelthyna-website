@@ -1,4 +1,4 @@
-const lastUpdated = "September 19, 2026";
+const lastUpdated = "September 20, 2026";
 
 document.getElementById("footer-updated").textContent =
     `Last updated: ${lastUpdated}`;

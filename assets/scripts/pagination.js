@@ -37,33 +37,6 @@ function renderPage(page) {
     renderPagination(page);
 }
 
-/* function renderPage(page) {
-    const list = document.getElementById("article-list");
-    list.innerHTML = "";
-
-    const start = (page - 1) * articlesPerPage;
-    const end = start + articlesPerPage;
-
-    const pageArticles = articles.slice(start, end);
-
-    const validArticles = pageArticles.filter(a => a && a.title && a.url && a.date);
-
-    if (validArticles.length === 0) {
-        list.innerHTML = `<p class="empty-state">Nothing has been archived in this section yet.</p>`;
-        document.getElementById("pagination").innerHTML = "";
-        return;
-    }
-    
-    validArticles.forEach(article => {
-        const item = document.createElement("div");
-        item.className = "article-item";
-        item.innerHTML = `<a href="${article.url}">${article.title}</a> <span>${article.date}</span>`;
-        list.appendChild(item);
-    });
-
-    renderPagination(page);
-} */
-
 function renderPagination(currentPage) {
     const pagination = document.getElementById("pagination");
     pagination.innerHTML = "";

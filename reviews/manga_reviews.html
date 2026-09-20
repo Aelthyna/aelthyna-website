@@ -3,10 +3,10 @@
     <head>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Reviews – A Moment's Thought</title>
+        <title>Manga reviews – A Moment's Thought</title>
         <meta
             name="description"
-            content="A chronological list of all thoughts published on A Moment's Thought."
+            content="A chronological list of all manga reviews published on A Moment's Thought."
         />
         <meta name="author" content="Aelthyna"/>
 
@@ -16,9 +16,9 @@
         />
         <meta
             property="og:description"
-            content="A chronological list of all thoughts published on A Moment's Thought."
+            content="A chronological list of all manga reviews published on A Moment's Thought."
         />
-        <meta property="og:title" content="Thoughts – A Moment's Thought"/>
+        <meta property="og:title" content="Manga reviews – A Moment's Thought"/>
 
         <!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon" /> -->
 
@@ -27,7 +27,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
-        
+    
         <link rel="icon" type="image/png" sizes="16x16" href="../assets/icon/favicon-16.png">
         <link rel="icon" type="image/png" sizes="32x32" href="../assets/icon/favicon-32.png">
         <link rel="icon" type="image/png" sizes="48x48" href="../assets/icon/favicon-48.png">
@@ -38,6 +38,10 @@
 
     <body>
         <header class="site-header">
+            <header class="header-box">
+                <p id="header-date"></p>
+            </header>
+
             <button id="theme-switcher">Switch Theme</button>
 
             <div class="title-area">
@@ -50,7 +54,7 @@
             <nav class="main-nav">
                 <ul>
                     <li><a class="nav-label" href="../index.html">Home</a></li>
-                    <li><a class="nav-label" href="../articles.html">Articles</a></li>
+                    <li><a class="nav-label" href="../reviews.html">Reviews</a></li>
                     <li><a class="nav-label" href="../gallery.html">Gallery</a></li>
                     <li><a class="nav-label" href="../about.html">About</a></li>
                 </ul>
@@ -59,16 +63,16 @@
 
         <div class="content-wrapper">
             <div class="content-box">
-                <h2>Thoughts</h2>
+                <h2>Manga reviews</h2>
 
                 <p>
-                    A chronological list of all thoughts published on A Moment's Thought.
+                    A chronological list of all manga reviews published on A Moment's Thought.
                 </p>
 
                 <section id="article-list"></section>
                 <div id="pagination"></div>
             </div>
-        
+            
             <footer class="footer-box">
                 <span id="footer-updated"></span>
                 <span id="footer-date"></span>
@@ -78,7 +82,22 @@
         <script>
             const articles = [
                 {
-                    
+                    title: "Battle Angel Alita",
+                    date: "2026-09-20",
+                    url: "manga_reviews/2026-09-20-battle_angel_alita.html",
+                    section: "Manga reviews"
+                },
+                {
+                    title: "Planetes",
+                    date: "2026-09-20",
+                    url: "manga_reviews/2026-09-20-planetes.html",
+                    section: "Manga reviews"
+                },
+                {
+                    title: "Yokohama Kaidashi Kikou (OVA)",
+                    date: "2026-09-20",
+                    url: "manga_reviews/2026-09-20-yokohama_kaidashi_kikou_ova_1.html",
+                    section: "Manga reviews"
                 }
             ];
         </script>

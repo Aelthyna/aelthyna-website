@@ -32,61 +32,65 @@
         <link rel="icon" type="image/png" sizes="64x64" href="../assets/icon/favicon-64.png">
 
         <link rel="icon" href="../assets/icon/favicon.ico">
-        
-        <script>
-            const lastUpdated = "September 13, 2026";
-        </script>
     </head>
 
     <body>
-        <header>
-            <p id="header-date"></p>
+        <header class="site-header">
+            <button id="theme-switcher">Switch Theme</button>
+
+            <div class="title-area">
+                <h1 class="fira-code-bold site-title">
+                    <a href="../index.html" class="title-link"><em>A Moment's Thought</em></a>
+                </h1>
+                <div class="title-separator"></div>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a class="nav-label" href="../index.html">Home</a></li>
+                    <li><a class="nav-label" href="../articles.html">Articles</a></li>
+                    <li><a class="nav-label" href="../gallery.html">Gallery</a></li>
+                    <li><a class="nav-label" href="../about.html">About</a></li>
+                </ul>
+            </nav>
         </header>
 
-        <div class="title-area">
-            <h1 class="fira-code-bold site-title">
-                <a href="../index.html" class="title-link"><em>A Moment's Thought</em></a>
-            </h1>
-            <div class="title-separator"></div>
+        <div class="content-wrapper">
+            <div class="content-box">
+                <h2>Anime backgrounds</h2>
+
+                <p>
+                    Here is a list, categorized by anime, where I collect screenshots
+                    taken from anime I have watched. I always found the background work
+                    in anime to be strangely alluring; while the foreground action and the
+                    characters themselves tend to be drawn in a streamlined fashion,
+                    backgrounds are often drawn like paintings: dreamy, lush, melancholy,
+                    evocative. It often happens that I have to stop to admire them.
+                </p>
+
+                <ul class="article-categories">
+                    <li>
+                        <a href="anime_backgrounds/ghost_in_the_shell_2026.html">Ghost in the Shell (2026)</a>
+                        <p class="article-caption">Stills from the 2026 Ghost in the Shell anime.</p>
+                    </li>
+                    <li>
+                        <a href="anime_backgrounds/ghost_in_the_shell_1995.html">Ghost in the Shell (1995)</a>
+                        <p class="article-caption">Stills from Mamoru Oshii's Ghost in the Shell film.</p>
+                    </li>
+                    <li>
+                        <a href="anime_backgrounds/yokohama_kaidashi_kikou_ova.html">Yokohama Kaidashi Kikou (OVA)</a>
+                        <p class="article-caption">Stills from the Yokohama Kaidashi Kikou OVA.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <footer class="footer-box">
+                <span id="footer-updated"></span>
+                <span id="footer-date"></span>
+            </footer>
         </div>
-
-        <nav class="main-nav">
-            <ul>
-                <li><a class="nav-label" href="../index.html">Home</a></li>
-                <li><a class="nav-label" href="../articles.html">Articles</a></li>
-                <li><a class="nav-label" href="../gallery.html">Gallery</a></li>
-                <li><a class="nav-label" href="../about.html">About</a></li>
-            </ul>
-        </nav>
-
-        <div class="content-box">
-            <h2>Anime backgrounds</h2>
-
-            <p>
-                Here is a list, categorized by anime, where I collect screenshots
-                taken from anime I have watched. I always found the background work
-                in anime to be strangely alluring; while the foreground action and the
-                characters themselves tend to be drawn in a streamlined fashion,
-                backgrounds are often drawn like paintings: dreamy, lush, melancholy,
-                evocative. It often happens that I have to stop to admire them.
-            </p>
-
-            <ul class="article-categories">
-                <li>
-                    <a href="anime_backgrounds/ghost_in_the_shell_2026.html">Ghost in the Shell (2026)</a>
-                    <p class="article-caption">Stills from the 2026 Ghost in the Shell anime.</p>
-                </li>
-                <li>
-                    <a href="anime_backgrounds/ghost_in_the_shell_1995.html">Ghost in the Shell (1995)</a>
-                    <p class="article-caption">Stills from Mamoru Oshii's Ghost in the Shell film.</p>
-                </li>
-            </ul>
-        </div>
-
-        <footer>
-            <p id="footer-date"></p>
-        </footer>
 
         <script src="../assets/scripts/date.js" defer></script>
+        <script src="../assets/scripts/theme-switcher.js" defer></script>
     </body>
 </html>

@@ -32,66 +32,66 @@
         <link rel="icon" type="image/png" sizes="64x64" href="assets/icon/favicon-64.png">
 
         <link rel="icon" href="assets/icon/favicon.ico">
-        
-        <script>
-            const lastUpdated = "September 16, 2026";
-        </script>
     </head>
 
     <body>
-        <header>
-            <p id="header-date"></p>
+        <header class="site-header">
+            <button id="theme-switcher">Switch Theme</button>
+
+            <div class="title-area">
+                <h1 class="fira-code-bold site-title">
+                    <a href="index.html" class="title-link"><em>A Moment's Thought</em></a>
+                </h1>
+                <div class="title-separator"></div>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a class="nav-label" href="index.html">Home</a></li>
+                    <li><a class="nav-label" href="articles.html">Articles</a></li>
+                    <li><a class="nav-label" href="gallery.html">Gallery</a></li>
+                    <li><a class="nav-label" href="about.html">About</a></li>
+                </ul>
+            </nav>
         </header>
 
-        <div class="title-area">
-            <h1 class="fira-code-bold site-title">
-                <a href="index.html" class="title-link"><em>A Moment's Thought</em></a>
-            </h1>
-            <div class="title-separator"></div>
+        <div class="content-wrapper">
+            <div class="content-box">
+                <h2>Articles</h2>
+
+                <p>
+                    Here you will find a series of links to all sections of my
+                    website where I collect the written material I have posted over
+                    time.
+                </p>
+
+                <ul class="article-categories">
+                    <li>
+                        <a href="articles/essays.html">Essays</a>
+                        <p class="article-caption">Reflections on various kinds of topics.</p>
+                    </li>
+                    <li>
+                        <a href="articles/reviews.html">Reviews</a>
+                        <p class="article-caption">Impressions on the media I explore.</p>
+                    </li>
+                    <li>
+                        <a href="articles/projects.html">Projects</a>
+                        <p class="article-caption">Notes on projects I have embarked on.</p>
+                    </li>
+                    <li>
+                        <a href="articles/thoughts.html">Thoughts</a>
+                        <p class="article-caption">Reflections that do not quite qualify as essays.</p>
+                    </li>
+                </ul>
+            </div>
+            
+            <footer class="footer-box">
+                <span id="footer-updated"></span>
+                <span id="footer-date"></span>
+            </footer>
         </div>
-
-        <nav class="main-nav">
-            <ul>
-                <li><a class="nav-label" href="index.html">Home</a></li>
-                <li><a class="nav-label" href="articles.html">Articles</a></li>
-                <li><a class="nav-label" href="gallery.html">Gallery</a></li>
-                <li><a class="nav-label" href="about.html">About</a></li>
-            </ul>
-        </nav>
-
-        <div class="content-box">
-            <h2>Articles</h2>
-
-            <p>
-                Here you will find a series of links to all sections of my
-                website where I collect the written material I have posted over
-                time.
-            </p>
-
-            <ul class="article-categories">
-                <li>
-                    <a href="articles/essays.html">Essays</a>
-                    <p class="article-caption">Reflections on various kinds of topics.</p>
-                </li>
-                <li>
-                    <a href="articles/reviews.html">Reviews</a>
-                    <p class="article-caption">Impressions on the media I explore.</p>
-                </li>
-                <li>
-                    <a href="articles/projects.html">Projects</a>
-                    <p class="article-caption">Notes on projects I have embarked on.</p>
-                </li>
-                <li>
-                    <a href="articles/thoughts.html">Thoughts</a>
-                    <p class="article-caption">Reflections that do not quite qualify as essays.</p>
-                </li>
-            </ul>
-        </div>
-
-        <footer>
-            <p id="footer-date"></p>
-        </footer>
 
         <script src="assets/scripts/date.js" defer></script>
+        <script src="assets/scripts/theme-switcher.js" defer></script>
     </body>
 </html>

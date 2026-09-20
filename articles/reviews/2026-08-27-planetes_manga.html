@@ -34,67 +34,78 @@
         <link rel="icon" type="image/png" sizes="64x64" href="../../assets/icon/favicon-64.png">
 
         <link rel="icon" href="../../assets/icon/favicon.ico">
-
-        <script>
-            const lastUpdated = "August 27, 2026";
-        </script>
     </head>
 
     <body>
-        <header>
-            <p id="header-date"></p>
+        <header class="site-header">
+            <button id="theme-switcher">Switch Theme</button>
+
+            <div class="title-area">
+                <h1 class="fira-code-bold site-title">
+                    <a href="../../index.html" class="title-link"><em>A Moment's Thought</em></a>
+                </h1>
+                <div class="title-separator"></div>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a class="nav-label" href="../../index.html">Home</a></li>
+                    <li><a class="nav-label" href="../../articles.html">Articles</a></li>
+                    <li><a class="nav-label" href="../../gallery.html">Gallery</a></li>
+                    <li><a class="nav-label" href="../../about.html">About</a></li>
+                </ul>
+            </nav>
         </header>
 
-        <div class="title-area">
-            <h1 class="fira-code-bold site-title">
-                <a href="../../index.html" class="title-link"><em>A Moment's Thought</em></a>
-            </h1>
-            <div class="title-separator"></div>
-        </div>
+        <div class="content-wrapper">
+            <div class="content-box">
+                <div class="title-area">
+                    <h2>A review of the <em>Planetes</em> manga</h2>
+                    <a href="../reviews.html" class="back-button">(Return to Previous Page)</a>
+                </div>
 
-        <nav class="main-nav">
-            <ul>
-                <li><a class="nav-label" href="../../index.html">Home</a></li>
-                <li><a class="nav-label" href="../../articles.html">Articles</a></li>
-                <li><a class="nav-label" href="../../gallery.html">Gallery</a></li>
-                <li><a class="nav-label" href="../../about.html">About</a></li>
-            </ul>
-        </nav>
+                <section id="text-pages"></section>
+                <div id="text-pagination"></div>
 
-        <div class="content-box">
-            <h2>A review of the <em>Planetes</em> manga</h2>
+                <script>
+                    const textParagraphs = [
+                        `Planetes can perhaps be best summed up as a slice-of-life story set in space; while there are definitely moments that feel more high-stakes and outside of day-to-day experience, the story mostly focuses on the mundane experience of a crew tasked with debris disposal in Earth's orbit.`,
+
+                        `Set in the seventh decade of the 21st century, the world of Planetes is one where the settlement of space is in full swing. Multiple installations are strewn across Earth's orbit, the Moon and Mars feature various large human settlements, and the first manned mission to Jupiter is in the works. Life and travel in space are now regularly undergone not just by researchers and military personnel, but by significant swaths of the civilian population.`,
+
+                        `With the intensifying of human activity in space, the waste it naturally produces becomes enough of a problem to make space debris collection a full-fledged profession, one to be taken quite seriously. Without it, Earth's orbit could become so saturated as to make any further activity increasingly difficult; after all, not only does stray debris make navigation more difficult, but, because it is never standing still, it could hit spaceships and installations, with catastrophic consequences.`,
+
+                        `The protagonists of the story belong to a crew dedicated to debris removal, working for Technora—one of multiple corporate conglomerates handling space development. As the manga opens, the crew consists of EVA operators Hachirota Hoshino and Yuri Mikhalkov, later to be joined by recruit Ai Tanabe, and of pilot Fee Charmicael, acting as the leader.`,
+
+                        `Hachirota, whom everyone calls Hachimaki (or simply Hachi) because of the bandana he wears during his EVAs (Hachimaki is the Japanese word for bandana), is the foremost protagonist of the story. Of Japanese origins, he is a young man in his early twenties who has always been irresistibly drawn to space and who dreams of someday being able to become the captain of his own ship. His demeanor is initially arrogant and self-centered, though, deep inside, he wrestles with a sense of profound insecurity and anxiety at his future; through the events of the story, however, his personality ends up changing significantly, mirroring the developments in his inner struggles.`,
+
+                        `Fee is a woman in her thirties hailing from the United States, working in outer space as a breadwinner for her family, consisting of her stay-at-home husband and their young nine-year-old son. She has a fiery and stubborn temper, is extremely competent and caring for her crew members, and is a heavy smoker—a habit that is frowned upon in space, given the strain it produces on life support systems.`,
+
+                        `Yuri Mikhalkov is a Russian man in his thirties, with a calm, measured demeanor, and a philosophical approach to life, who got into debris disposal after a tragic accident involving him and his newly wed wife. While traveling to England, the low-orbit spacecraft they were on is struck by a stray piece of debris at high velocity, causing the plane to depressurize and killing many of the passengers. Having survived the incident, Yuri decides to get into debris disposal in the hope of someday finding a memento his wife had gifted him just before the catastrophe, and that was lost together with her body.`,
+
+                        `Ai Tanabe is a young Japanese woman in her early twenties who joins the crew as a replacement for Hachirota after the latter decides to leave the crew in order to take part in the mission to Jupiter. Her personality is, in more ways than one, a foil to that of Hachimaki, and acts as a catalyst for the latter's personal development: her emotional and sensitive nature, combined with her impulsiveness, is precisely what it takes to force Hachimaki to face his inner demons, and to grow out of his brash and unfeeling behavior—a reflection not of his real nature, but of his personal anxieties.`,
+
+                        `Of course, as the narrative progresses, countless more characters are introduced. It is senseless to mention them all; to give a few prominent examples, think about Werner Locksmith, a brilliant engineer who spearheads the development of the Von Braun, the spacecraft tasked with the mission to Jupiter. Though he is shown to the reader as a seemingly cold character, driven by the cynical idea that the ends justify the means, it becomes apparent over time that this is the result not of natural heartlessness, but of a belief in science so deep as to often eclipse his ordinary human empathy. Then, there is Goro Hoshino, Hachimaki's eccentric father; though lazy on the surface and somewhat of a pervert, he is also a renowned space pioneer and accomplished engineer who is personally picked (well, more like chased down!) by Werner Locksmith to join the Von Braun crew.`,
+
+                        `Planetes alternates between episodes focusing on more mundane, yet always interesting, stories, and others where the events depicted are decidedly more out of the ordinary. In an example of the former, Hachimaki is forced to spend some time recovering from an injury in a base on the surface of the Moon; this event is an occasion for him and, by extension, for the reader to get acquainted with a Lunarian, that is a human being who was born on the Moon. Because the Moon's gravity is lower than that of Earth, people born on it develop a different bone structure, growing to be much taller than an average Earthling, yet weaker at the same time. In an example of the latter, a series of episodes depict a harrowing conflict between two countries, which engage in destroying each other's installations in Earth's orbit; Fee's crew finds itself between the two contenders, hopelessly witnessing the senseless, spiraling destruction that generates a devastating amount of debris and causing great harm to space development.`,
+
+                        `Planetes deserves ample credit for its depiction of the future of space exploration. While science fiction often explores this theme, it rarely does so in such a grounded and thoughtful way; while the manga obviously cannot predict future events exactly as they will take place, it does manage to paint a future that is deeply believable and founded, as much as possible, on the state of science and technology as it was at the beginning of the 21st century.`,
+
+                        `Furthermore, space is depicted not as a world of epic adventure, but rather as just another step in mankind's exploration of the universe. Though space is "the final frontier," human experience remains the same as it has always been; perhaps the very inhospitality of space is what allows for the fragility of the human species, but also for its brighter sides, to come to the fore. This, incidentally, is the second strength of the manga, after its setting: Planetes is, fundamentally, a story about ordinary human beings, with all their individual struggles, their little defeats, and their little successes. Space acts as a magnificent backdrop for a story that could very well have been set on Earth, thereby making it highly relatable for the reader, while also maintaining an outward appeal with its tinges of science fiction.`,
+
+                        `It should surprise no one, then, that, though the manga ends with a great achievement—the successful arrival at Jupiter of the Von Braun—the real climax is in Hachimaki's last words: that his greatest discovery was that the core of human existence is sharing one's life with others; that is, love, in its broadest definition.`
+                    ];
+                </script>
+            </div>
             
-            <p>Planetes can perhaps be best summed up as a slice-of-life story set in space; while there are definitely moments that feel more high-stakes and outside of day-to-day experience, the story mostly focuses on the mundane experience of a crew tasked with debris disposal in Earth's orbit.</p>
-
-            <p>Set in the seventh decade of the 21st century, the world of Planetes is one where the settlement of space is in full swing. Multiple installations are strewn across Earth's orbit, the Moon and Mars feature various large human settlements, and the first manned mission to Jupiter is in the works. Life and travel in space are now regularly undergone not just by researchers and military personnel, but by significant swaths of the civilian population.</p>
-
-            <p>With the intensifying of human activity in space, the waste it naturally produces becomes enough of a problem to make space debris collection a full-fledged profession, one to be taken quite seriously. Without it, Earth's orbit could become so saturated as to make any further activity increasingly difficult; after all, not only does stray debris make navigation more difficult, but, because it is never standing still, it could hit spaceships and installations, with catastrophic consequences.</p>
-
-            <p>The protagonists of the story belong to a crew dedicated to debris removal, working for Technora—one of multiple corporate conglomerates handling space development. As the manga opens, the crew consists of EVA operators Hachirota Hoshino and Yuri Mikhalkov, later to be joined by recruit Ai Tanabe, and of pilot Fee Charmicael, acting as the leader.</p>
-
-            <p>Hachirota, whom everyone calls Hachimaki (or simply Hachi) because of the bandana he wears during his EVAs (Hachimaki is the Japanese word for bandana), is the foremost protagonist of the story. Of Japanese origins, he is a young man in his early twenties who has always been irresistibly drawn to space and who dreams of someday being able to become the captain of his own ship. His demeanor is initially arrogant and self-centered, though, deep inside, he wrestles with a sense of profound insecurity and anxiety at his future; through the events of the story, however, his personality ends up changing significantly, mirroring the developments in his inner struggles.</p>
-
-            <p>Fee is a woman in her thirties hailing from the United States, working in outer space as a breadwinner for her family, consisting of her stay-at-home husband and their young nine-year-old son. She has a fiery and stubborn temper, is extremely competent and caring for her crew members, and is a heavy smoker—a habit that is frowned upon in space, given the strain it produces on life support systems.</p>
-
-            <p>Yuri Mikhalkov is a Russian man in his thirties, with a calm, measured demeanor, and a philosophical approach to life, who got into debris disposal after a tragic accident involving him and his newly wed wife. While traveling to England, the low-orbit spacecraft they were on is struck by a stray piece of debris at high velocity, causing the plane to depressurize and killing many of the passengers. Having survived the incident, Yuri decides to get into debris disposal in the hope of someday finding a memento his wife had gifted him just before the catastrophe, and that was lost together with her body.</p>
-
-            <p>Ai Tanabe is a young Japanese woman in her early twenties who joins the crew as a replacement for Hachirota after the latter decides to leave the crew in order to take part in the mission to Jupiter. Her personality is, in more ways than one, a foil to that of Hachimaki, and acts as a catalyst for the latter's personal development: her emotional and sensitive nature, combined with her impulsiveness, is precisely what it takes to force Hachimaki to face his inner demons, and to grow out of his brash and unfeeling behavior—a reflection not of his real nature, but of his personal anxieties.</p>
-
-            <p>Of course, as the narrative progresses, countless more characters are introduced. It is senseless to mention them all; to give a few prominent examples, think about Werner Locksmith, a brilliant engineer who spearheads the development of the Von Braun, the spacecraft tasked with the mission to Jupiter. Though he is shown to the reader as a seemingly cold character, driven by the cynical idea that the ends justify the means, it becomes apparent over time that this is the result not of natural heartlessness, but of a belief in science so deep as to often eclipse his ordinary human empathy. Then, there is Goro Hoshino, Hachimaki's eccentric father; though lazy on the surface and somewhat of a pervert, he is also a renowned space pioneer and accomplished engineer who is personally picked (well, more like chased down!) by Werner Locksmith to join the Von Braun crew.</p>
-
-            <p>Planetes alternates between episodes focusing on more mundane, yet always interesting, stories, and others where the events depicted are decidedly more out of the ordinary. In an example of the former, Hachimaki is forced to spend some time recovering from an injury in a base on the surface of the Moon; this event is an occasion for him and, by extension, for the reader to get acquainted with a Lunarian, that is a human being who was born on the Moon. Because the Moon's gravity is lower than that of Earth, people born on it develop a different bone structure, growing to be much taller than an average Earthling, yet weaker at the same time. In an example of the latter, a series of episodes depict a harrowing conflict between two countries, which engage in destroying each other's installations in Earth's orbit; Fee's crew finds itself between the two contenders, hopelessly witnessing the senseless, spiraling destruction that generates a devastating amount of debris and causing great harm to space development.</p>
-
-            <p>Planetes deserves ample credit for its depiction of the future of space exploration. While science fiction often explores this theme, it rarely does so in such a grounded and thoughtful way; while the manga obviously cannot predict future events exactly as they will take place, it does manage to paint a future that is deeply believable and founded, as much as possible, on the state of science and technology as it was at the beginning of the 21st century.</p>
-
-            <p>Furthermore, space is depicted not as a world of epic adventure, but rather as just another step in mankind's exploration of the universe. Though space is "the final frontier," human experience remains the same as it has always been; perhaps the very inhospitality of space is what allows for the fragility of the human species, but also for its brighter sides, to come to the fore. This, incidentally, is the second strength of the manga, after its setting: Planetes is, fundamentally, a story about ordinary human beings, with all their individual struggles, their little defeats, and their little successes. Space acts as a magnificent backdrop for a story that could very well have been set on Earth, thereby making it highly relatable for the reader, while also maintaining an outward appeal with its tinges of science fiction.</p>
-
-            <p>It should surprise no one, then, that, though the manga ends with a great achievement—the successful arrival at Jupiter of the Von Braun—the real climax is in Hachimaki's last words: that his greatest discovery was that the core of human existence is sharing one's life with others; that is, love, in its broadest definition.</p>
+            <footer class="footer-box">
+                <span id="footer-updated"></span>
+                <span id="footer-date"></span>
+            </footer>
         </div>
 
-        <footer>
-            <p id="footer-date"></p>
-        </footer>
-
+        <script src="../../assets/scripts/text-pagination.js" defer></script>
         <script src="../../assets/scripts/date.js" defer></script>
+        <script src="../../assets/scripts/theme-switcher.js" defer></script>
     </body>
 </html>

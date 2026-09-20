@@ -36,77 +36,68 @@
         <link rel="icon" type="image/png" sizes="64x64" href="../../assets/icon/favicon-64.png">
 
         <link rel="icon" href="../../assets/icon/favicon.ico">
-
-        <script>
-            const lastUpdated = "September 13, 2026";
-        </script>
     </head>
 
     <body>
-        <header>
-            <p id="header-date"></p>
+        <header class="site-header">
+            <button id="theme-switcher">Switch Theme</button>
+
+            <div class="title-area">
+                <h1 class="fira-code-bold site-title">
+                    <a href="../../index.html" class="title-link"><em>A Moment's Thought</em></a>
+                </h1>
+                <div class="title-separator"></div>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a class="nav-label" href="../../index.html">Home</a></li>
+                    <li><a class="nav-label" href="../../articles.html">Articles</a></li>
+                    <li><a class="nav-label" href="../../gallery.html">Gallery</a></li>
+                    <li><a class="nav-label" href="../../about.html">About</a></li>
+                </ul>
+            </nav>
         </header>
 
-        <div class="title-area">
-            <h1 class="fira-code-bold site-title">
-                <a href="../../index.html" class="title-link"><em>A Moment's Thought</em></a>
-            </h1>
-            <div class="title-separator"></div>
+        <div class="content-wrapper">
+            <div class="content-box">
+                <div class="title-area">
+                    <h2>Ghost in the Shell and the Death of Liberalism</h2>
+                    <a href="../essays.html" class="back-button">(Return to Previous Page)</a>
+                </div>
+
+                <section id="text-pages"></section>
+                <div id="text-pagination"></div>
+
+                <script>
+                    const textParagraphs = [
+                        `Classical liberalism, the one that drove the American and French revolutions and that characterized the 19th century, is closer to what you are saying. That form of liberalism, in spite of its universalist declamations (e.g. the 1789 Declaration of the Rights of Man and of the Citizen), was fundamentally geared toward the rising bourgeois class. This is not surprising when you analyze what rights were upheld the most: individual freedoms, the principle of state non-intervention, and, most importantly, the right to property. The liberal revolution was in practice, and in spite of its commendable philosophical underpinnings, a tool for the empowerment of the bourgeoisie, which needed both a way to assert itself against the already existing power-holding classes (the nobility in particular), and a way to defend the means of its success—property and the market economy.`,
+
+                        `This explains why the 19th century was rife with contradictions; though the age of classical liberalism, it was also an age of extremely limited political suffrage, the merciless exploitation of the underclasses, the near-absence of labor laws protecting workers, the often heavy handed suppression of protests. It is not surprising, then, that Marx famously considered the State nothing more that the means through which the power-holding classes protect their interests.`,
+
+                        `However, this is not what modern liberalism is; it is certainly not what Western European liberalism is, it is not what the liberal spirit that animates the United Nations is. Not even American liberalism, historically and to this day still tied to its classical form, has been left untouched. Modern liberalism was shaped by two fundamental historical events: (1) the rise of mass society and social inequality reaching a breaking point, making it impossible to ignore the rights and interests of the underclasses any further; (2) the catastrophes and traumas of the first half of the 20th century: the unprecedented, fundamental negation of human dignity through two world wars, totalitarianism, ethnic cleansing, and genocide.`,
+
+                        `The liberalism that emerged from the ruins of WW2 had to change, and it did so in a way that can be most simply illustrated as a shift from the centrality of the right to property to the centrality of social and human rights. Liberalism was extended to mass society, and it recognized as the most precious value, the one the State is meant to protect above all, and the foundation of the legality of any of its actions, is human life and dignity. As such, because any human society is structurally inequal, the State must intervene to give everyone the same means to flourish, because a good life is an essential prerequisite for human dignity; furthermore, because history has shown how dramatically, how catastrophically human dignity can be crushed, State power must protect human rights before anything else, even before property; in fact, the legitimacy of any action of the State rests on whether it is fundamentally aimed at protecting these rights.`,
+
+                        `And this is where we come to Ghost in the Shell, and why it is a powerful work of political speculation. The world of Ghost in the Shell is not liberal; it is post-liberal through and through. It's not a world of classical liberalism, nor is it a world of modern human rights-centered liberalism; it is a world where liberalism has died. The reason is clear: as is known from the backstory, humanity in Ghost in the Shell's universe has suffered two catastrophic world wars, one of them nuclear, at the beginning of the 21st century. Unlike humanity after WW2, which was able to (at least partially) morally recover from the catastrophe, humanity in GitS could not. Much of the world has suffered either a systemic collapse or devolved into dictatorships or aggressive military states (e.g. the American Empire). Those parts of the world that didn't, and that managed to reacquire a measure of wealth and stability, such as Western Europe or Japan, have maintained the facade of functioning, pre-war liberal democracies, but have in fact turned into full-fledged security bureaucracies where politics and state survival trump the rule of law.`,
+
+                        `This is what explains Section 9's ruthlessness; this is what explains the political assassinations ordered by high-ranking members of government; this is what explains absolutely immoral deals with economically weak countries. The world of GitS is one of material survival and even prosperity in places, but of all-encompassing ethical collapse.`,
+
+                        `And this is where the political side ties with the science fiction side of Ghost in the Shell. In a world where liberalism has been hollowed out, hyper-capitalism is left to run free; deregulation and powerful private interests rule the day, and the State is no longer a bulwark for the individual against the worst excesses of the free market. Naturally, this is an ideal environment for unchecked, frenzied technological evolution to take place. Think about the augmentations featured by the guards at the Sacred Relief Center in Episode One; though powerful, they completely disfigure their users, who can no longer lead a proper, normal human life. You'd think those were illegal, rough black market augmentations, right? Not at all; it's standard military issue employed by the JSDF. Something like this can only be imagined in a world where ethics have collapsed and even the human body has been completely commodified.`,
+
+                        `Perhaps the most powerful point by Ghost in the Shell is that humanity has failed. Whereas, in other dystopian works, it is sometimes emphasized that the human spirit, though degraded, though crushed, though suppressed, still maintains its nobility, and remains the way for humanity to redeem itself, Ghost in the Shell seems to be telling us that humanity has ethically failed in a way that's irrecoverable. Project 2501, and Motoko's merging with it, is then not just an interesting reflection on the concept of emergence, and of biological evolution being the intermediate step for technological evolution to take over, but also the only way for humanity to redeem itself: by creating something that can transcend it and cleanse it of its sins.`
+                    ];
+                </script>
+            </div>
+
+            <footer class="footer-box">
+                <span id="footer-updated"></span>
+                <span id="footer-date"></span>
+            </footer>
         </div>
 
-        <nav class="main-nav">
-            <ul>
-                <li><a class="nav-label" href="../../index.html">Home</a></li>
-                <li><a class="nav-label" href="../../articles.html">Articles</a></li>
-                <li><a class="nav-label" href="../../gallery.html">Gallery</a></li>
-                <li><a class="nav-label" href="../../about.html">About</a></li>
-            </ul>
-        </nav>
-
-        <div class="content-box">
-            <h2>Ghost in the Shell and the Death of Liberalism</h2>
-
-            <p>Classical liberalism, the one that drove the American and French revolutions and that characterized the 19th century, is closer to what you are saying. That form of liberalism, in spite of its universalist declamations (e.g. the 1789 Declaration of the Rights of Man and of the Citizen), was fundamentally geared toward the rising bourgeois class. This is not surprising when you analyze what rights were upheld the most: individual freedoms, the principle of state non-intervention, and, most importantly, the right to property. The liberal revolution was in practice, and in spite of its commendable philosophical underpinnings, a tool for the empowerment of the bourgeoisie, which needed both a way to assert itself against the already existing power-holding classes (the nobility in particular), and a way to defend the means of its success—property and the market economy.</p>
-
-            <p>This explains why the 19th century was rife with contradictions; though the age of classical liberalism, it was also an age of extremely limited political suffrage, the merciless exploitation of the underclasses, the near-absence of labor laws protecting workers, the often heavy handed suppression of protests. It is not surprising, then, that Marx famously considered the State nothing more that the means through which the power-holding classes protect their interests.</p>
-
-            <p>However, this is not what modern liberalism is; it is certainly not what Western European liberalism is, it is not what the liberal spirit that animates the United Nations is. Not even American liberalism, historically and to this day still tied to its classical form, has been left untouched. Modern liberalism was shaped by two fundamental historical events: (1) the rise of mass society and social inequality reaching a breaking point, making it impossible to ignore the rights and interests of the underclasses any further; (2) the catastrophes and traumas of the first half of the 20th century: the unprecedented, fundamental negation of human dignity through two world wars, totalitarianism, ethnic cleansing, and genocide.</p>
-
-            <p>The liberalism that emerged from the ruins of WW2 had to change, and it did so in a way that can be most simply illustrated as a shift from the centrality of the right to property to the centrality of social and human rights. Liberalism was extended to mass society, and it recognized as the most precious value, the one the State is meant to protect above all, and the foundation of the legality of any of its actions, is human life and dignity. As such, because any human society is structurally inequal, the State must intervene to give everyone the same means to flourish, because a good life is an essential prerequisite for human dignity; furthermore, because history has shown how dramatically, how catastrophically human dignity can be crushed, State power must protect human rights before anything else, even before property; in fact, the legitimacy of any action of the State rests on whether it is fundamentally aimed at protecting these rights.</p>
-
-            <p>And this is where we come to Ghost in the Shell, and why it is a powerful work of political speculation. The world of Ghost in the Shell is not liberal; it is post-liberal through and through. It's not a world of classical liberalism, nor is it a world of modern human rights-centered liberalism; it is a world where liberalism has died. The reason is clear: as is known from the backstory, humanity in Ghost in the Shell's universe has suffered two catastrophic world wars, one of them nuclear, at the beginning of the 21st century. Unlike humanity after WW2, which was able to (at least partially) morally recover from the catastrophe, humanity in GitS could not. Much of the world has suffered either a systemic collapse or devolved into dictatorships or aggressive military states (e.g. the American Empire). Those parts of the world that didn't, and that managed to reacquire a measure of wealth and stability, such as Western Europe or Japan, have maintained the facade of functioning, pre-war liberal democracies, but have in fact turned into full-fledged security bureaucracies where politics and state survival trump the rule of law.</p>
-
-            <p>This is what explains Section 9's ruthlessness; this is what explains the political assassinations ordered by high-ranking members of government; this is what explains absolutely immoral deals with economically weak countries. The world of GitS is one of material survival and even prosperity in places, but of all-encompassing ethical collapse.</p>
-
-            <p>And this is where the political side ties with the science fiction side of Ghost in the Shell. In a world where liberalism has been hollowed out, hyper-capitalism is left to run free; deregulation and powerful private interests rule the day, and the State is no longer a bulwark for the individual against the worst excesses of the free market. Naturally, this is an ideal environment for unchecked, frenzied technological evolution to take place. Think about the augmentations featured by the guards at the Sacred Relief Center in Episode One; though powerful, they completely disfigure their users, who can no longer lead a proper, normal human life. You'd think those were illegal, rough black market augmentations, right? Not at all; it's standard military issue employed by the JSDF. Something like this can only be imagined in a world where ethics have collapsed and even the human body has been completely commodified.</p>
-
-            <p>Perhaps the most powerful point by Ghost in the Shell is that humanity has failed. Whereas, in other dystopian works, it is sometimes emphasized that the human spirit, though degraded, though crushed, though suppressed, still maintains its nobility, and remains the way for humanity to redeem itself, Ghost in the Shell seems to be telling us that humanity has ethically failed in a way that's irrecoverable. Project 2501, and Motoko's merging with it, is then not just an interesting reflection on the concept of emergence, and of biological evolution being the intermediate step for technological evolution to take over, but also the only way for humanity to redeem itself: by creating something that can transcend it and cleanse it of its sins.</p>
-
-            <p>[SHORTER VERSION]</p>
-
-            <p>I think you are raising a very interesting point, and, honestly? It's great to be talking about this, because I genuinely believe Ghost in the Shell is interesting not just as a work of science fiction, but also political speculation. (Don't feel forced to reply, I just feel like letting my mind wander a bit!)</p>
-
-            <p>Your point is that liberal democracy as depicted in GitS is precisely what it is supposed to look like. Not exactly, but you are onto something. If modern liberalism still coincided with classical liberalism, then yes; the liberalism that drove the American and French revolutions, in spite of its universal declamations, was fundamentally geared toward the interests of the rising bourgeois class. That is why it championed individual autonomy, the right to property, and minimal state intervention.</p>
-
-            <p>The nature of classical liberalism explains the contradictions of the 19th century: limited political suffrage, the exploitation of the underclasses, the near-absence of labor laws, the harsh suppression of worker movements. The liberal State was, to an extent, the means for the power-holding classes to protect their interests.</p>
-
-            <p>Modern liberalism is different, however, because it has been shaped by two fundamental historical events: the rise of mass society, and the catastrophes of the first half of the 20th century (world war, totalitarianism, genocide).</p>
-
-            <p>The liberalism that emerged from the wreck of WW2 changed drastically as a consequence. Having witnessed an unprecedented trampling of human dignity, it shifted the focus to human rights, and it founded the legality of State action on the protection of these. Recognizing that structural social and economic inequality makes it impossible for many people to flourish, it emphasized State intervention to give everyone an equal chance.</p>
-
-            <p>Ghost in the Shell's world is neither a classical nor a modern liberal one. It is a post-liberal world, where liberalism has died. It is a world that has witnessed two world wars, one nuclear, at the beginning of the 21st century, and where everything and everyone has been brutalized. Most of the world has either experienced systemic collapse or has devolved into aggressive military states. Those few parts of the world that maintained their wealth and stability, such as Western Europe and Japan, kept the appearance of functioning liberal democracies, but have, in fact, turned into security bureaucracies whose sole purpose is state survival.</p>
-
-            <p>This is what explains Section 9's ruthlessness, the political assassinations ordered by members of government, the exploitation of weaker countries. It's a world that has materially recovered but ethically collapsed.</p>
-
-            <p>This political background explains the science fiction side of GitS. Liberalism having been hollowed out, hyper-capitalism is left to run rampant; deregulation and private interests rule the day, and the State no longer protects the individual, This is the ideal environment for unchecked technological evolution to take place. Think about the augmentations featured by the guards at the Sacred Relief Center: though powerful, they completely disfigure their users, making it impossible to lead a normal life. You'd think those were rough, illegal black market augmentations; they're actually standard JSDF military issue. This could only happen in a world where ethics have collapsed and even the human body has been commodified.</p>
-
-            <p>Perhaps Project 2501's appearance is interesting not only in itself, showing technological evolution taking the reins from biological evolution, but is also the only cure for a humanity that has irredeemably failed. Technological transcendence is left as the only way to save the species.</p>
-        </div>
-
-        <footer>
-            <p id="footer-date"></p>
-        </footer>
-
+        <script src="../../assets/scripts/text-pagination.js" defer></script>
         <script src="../../assets/scripts/date.js" defer></script>
+        <script src="../../assets/scripts/theme-switcher.js" defer></script>
     </body>
 </html>

@@ -1,15 +1,7 @@
-/*const now = new Date();
-const formatted = now.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric"
-});
-document.getElementById("header-date").textContent = `Last updated: ${formatted}`;*/
+const lastUpdated = "September 19, 2026";
 
-if (typeof lastUpdated !== "undefined") {
-    document.getElementById("header-date").textContent =
-        `Last updated: ${lastUpdated}`;
-}
+document.getElementById("footer-updated").textContent =
+    `Last updated: ${lastUpdated}`;
 
 const year = new Date().getFullYear();
 document.getElementById("footer-date").textContent = `© ${year} A Moment's Thought`;

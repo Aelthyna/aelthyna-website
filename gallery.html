@@ -32,58 +32,58 @@
         <link rel="icon" type="image/png" sizes="64x64" href="assets/icon/favicon-64.png">
 
         <link rel="icon" href="assets/icon/favicon.ico">
-        
-        <script>
-            const lastUpdated = "September 16, 2026";
-        </script>
     </head>
 
     <body>
-        <header>
-            <p id="header-date"></p>
+        <header class="site-header">
+            <button id="theme-switcher">Switch Theme</button>
+
+            <div class="title-area">
+                <h1 class="fira-code-bold site-title">
+                    <a href="index.html" class="title-link"><em>A Moment's Thought</em></a>
+                </h1>
+                <div class="title-separator"></div>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a class="nav-label" href="index.html">Home</a></li>
+                    <li><a class="nav-label" href="articles.html">Articles</a></li>
+                    <li><a class="nav-label" href="gallery.html">Gallery</a></li>
+                    <li><a class="nav-label" href="about.html">About</a></li>
+                </ul>
+            </nav>
         </header>
 
-        <div class="title-area">
-            <h1 class="fira-code-bold site-title">
-                <a href="index.html" class="title-link"><em>A Moment's Thought</em></a>
-            </h1>
-            <div class="title-separator"></div>
+        <div class="content-wrapper">
+            <div class="content-box">
+                <h2>Gallery</h2>
+
+                <p>
+                    I have a soft spot for collecting background stills from all kinds
+                    of media, such as anime, cinema, or videogames. I am providing here the
+                    collection I have built over time.
+                </p>
+
+                <ul class="article-categories">
+                    <li>
+                        <a href="gallery/anime_backgrounds.html">Anime backgrounds</a>
+                        <p class="article-caption">A collection of background stills from anime I have watched.</p>
+                    </li>
+                    <li>
+                        <a href="gallery/videogame_backgrounds.html">Videogame backgrounds</a>
+                        <p class="article-caption">A collection of background stills from videogames I have played.</p>
+                    </li>
+                </ul>
+            </div>
+        
+            <footer class="footer-box">
+                <span id="footer-updated"></span>
+                <span id="footer-date"></span>
+            </footer>
         </div>
-
-        <nav class="main-nav">
-            <ul>
-                <li><a class="nav-label" href="index.html">Home</a></li>
-                <li><a class="nav-label" href="articles.html">Articles</a></li>
-                <li><a class="nav-label" href="gallery.html">Gallery</a></li>
-                <li><a class="nav-label" href="about.html">About</a></li>
-            </ul>
-        </nav>
-
-        <div class="content-box">
-            <h2>Gallery</h2>
-
-            <p>
-                I have a soft spot for collecting background stills from all kinds
-                of media, such as anime, cinema, or videogames. I am providing here the
-                collection I have built over time.
-            </p>
-
-            <ul class="article-categories">
-                <li>
-                    <a href="gallery/anime_backgrounds.html">Anime backgrounds</a>
-                    <p class="article-caption">A collection of background stills from anime I have watched.</p>
-                </li>
-                <li>
-                    <a href="gallery/videogame_backgrounds.html">Videogame backgrounds</a>
-                    <p class="article-caption">A collection of background stills from videogames I have played.</p>
-                </li>
-            </ul>
-        </div>
-
-        <footer>
-            <p id="footer-date"></p>
-        </footer>
 
         <script src="assets/scripts/date.js" defer></script>
+        <script src="assets/scripts/theme-switcher.js" defer></script>
     </body>
 </html>

@@ -32,81 +32,99 @@
         <link rel="icon" type="image/png" sizes="64x64" href="../../assets/icon/favicon-64.png">
 
         <link rel="icon" href="../../assets/icon/favicon.ico">
-        
-        <script>
-            const lastUpdated = "September 18, 2026";
-        </script>
     </head>
 
     <body>
-        <header>
-            <p id="header-date"></p>
+        <header class="site-header">
+            <button id="theme-switcher">Switch Theme</button>
+
+            <div class="title-area">
+                <h1 class="fira-code-bold site-title">
+                    <a href="../../index.html" class="title-link"><em>A Moment's Thought</em></a>
+                </h1>
+                <div class="title-separator"></div>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a class="nav-label" href="../../index.html">Home</a></li>
+                    <li><a class="nav-label" href="../../articles.html">Articles</a></li>
+                    <li><a class="nav-label" href="../../gallery.html">Gallery</a></li>
+                    <li><a class="nav-label" href="../../about.html">About</a></li>
+                </ul>
+            </nav>
         </header>
 
-        <div class="title-area">
-            <h1 class="fira-code-bold site-title">
-                <a href="../../index.html" class="title-link"><em>A Moment's Thought</em></a>
-            </h1>
-            <div class="title-separator"></div>
+        <div class="content-wrapper">
+            <div class="content-box">
+                <div class="title-area">
+                    <h2>Backgrounds from <em>Ghost in the Shell</em> (2026)</h2>
+                    <a href="../anime_backgrounds.html" class="back-button">(Return to Previous Page)</a>
+                </div>
+
+                <p>
+                    The 2026 adaptation of Masamune Shirow's iconic manga was a
+                    genuine surprise, and an absolute pleasure, in more ways than one. Shirow's
+                    imagining of humanity's near future remains as haunting, and chillingly plausible,
+                    as ever before, and the anime does a wonderful job of adapting it to modern audiences
+                    while remaining stunningly faithful to the source material. Science Saru's artistry
+                    shines through not only in the flawless animation, but also in its splendid,
+                    awe-inspiring background work. I have always loved anime for its painterly, melancholy
+                    backgrounds, and this title is no exception.
+                </p>
+
+                <section id="image-list"></section>
+                <div id="image-pagination"></div>
+            </div>
+
+            <script>
+                const images = [
+                    {
+                        src: "../../assets/images/ghost_in_the_shell_2026_backgrounds/background_01.jpg",
+                        alt: "Ghost in the Shell (2026) - Background 01",
+                        caption: "Decaying industrial landscapes, enchanted by the dawn's light."
+                    },
+                    {
+                        src: "../../assets/images/ghost_in_the_shell_2026_backgrounds/background_02.jpg",
+                        alt: "Ghost in the Shell (2026) - Background 02",
+                        caption: "A sarcophagus of concrete and steel, alienating yet alluring."
+                    },
+                    {
+                        src: "../../assets/images/ghost_in_the_shell_2026_backgrounds/background_03.jpg",
+                        alt: "Ghost in the Shell (2026) - Background 03",
+                        caption: "Under the watchful eye of distant skyscrapers, quiet places still remain."
+                    },
+                    {
+                        src: "../../assets/images/ghost_in_the_shell_2026_backgrounds/background_04.jpg",
+                        alt: "Ghost in the Shell (2026) - Background 04",
+                        caption: "The seams of reality begin to blur, transfigured under the misty rain."
+                    },
+                    {
+                        src: "../../assets/images/ghost_in_the_shell_2026_backgrounds/background_05.jpg",
+                        alt: "Ghost in the Shell (2026) - Background 05",
+                        caption: "A bridge crossing into an empire of steel."
+                    },
+                    {
+                        src: "../../assets/images/ghost_in_the_shell_2026_backgrounds/background_06.jpg",
+                        alt: "Ghost in the Shell (2026) - Background 06",
+                        caption: "Devoid of human life, the man-made world turns spectral."
+                    },
+                    {
+                        src: "../../assets/images/ghost_in_the_shell_2026_backgrounds/background_07.jpg",
+                        alt: "Ghost in the Shell (2026) - Background 07",
+                        caption: "The miracle of a new day, bathing an alien landscape in gold."
+                    }
+                ];
+            </script>
+
+            <footer class="footer-box">
+                <span id="footer-updated"></span>
+                <span id="footer-date"></span>
+            </footer>
         </div>
 
-        <nav class="main-nav">
-            <ul>
-                <li><a class="nav-label" href="../../index.html">Home</a></li>
-                <li><a class="nav-label" href="../../articles.html">Articles</a></li>
-                <li><a class="nav-label" href="../../gallery.html">Gallery</a></li>
-                <li><a class="nav-label" href="../../about.html">About</a></li>
-            </ul>
-        </nav>
-
-        <div class="content-box">
-            <h2>Backgrounds from <em>Ghost in the Shell</em> (2026)</h2>
-
-            <p>
-                The 2026 adaptation of Masamune Shirow's iconic manga was a
-                genuine surprise, and an absolute pleasure, in more ways than one. Shirow's
-                imagining of humanity's near future remains as haunting, and chillingly plausible,
-                as ever before, and the anime does a wonderful job of adapting it to modern audiences
-                while remaining stunningly faithful to the source material. Science Saru's artistry
-                shines through not only in the flawless animation, but also in its splendid,
-                awe-inspiring background work. I have always loved anime for its painterly, melancholy
-                backgrounds, and this title is no exception.
-            </p>
-
-            <figure class="article-image">
-                <img src="../../assets/images/ghost_in_the_shell_2026_backgrounds/background_01.jpg" alt="Ghost in the Shell (2026) - Background 01">
-                <figcaption>Decaying industrial landscapes, enchanted by the dawn's light.</figcaption>
-            </figure>
-            <figure class="article-image">
-                <img src="../../assets/images/ghost_in_the_shell_2026_backgrounds/background_02.jpg" alt="Ghost in the Shell (2026) - Background 02">
-                <figcaption>A sarcophagus of concrete and steel, alienating yet alluring.</figcaption>
-            </figure>
-            <figure class="article-image">
-                <img src="../../assets/images/ghost_in_the_shell_2026_backgrounds/background_03.jpg" alt="Ghost in the Shell (2026) - Background 03">
-                <figcaption>Under the watchful eye of distant skyscrapers, quiet places still remain.</figcaption>
-            </figure>
-            <figure class="article-image">
-                <img src="../../assets/images/ghost_in_the_shell_2026_backgrounds/background_04.jpg" alt="Ghost in the Shell (2026) - Background 04">
-                <figcaption>The seams of reality begin to blur, transfigured under the misty rain.</figcaption>
-            </figure>
-            <figure class="article-image">
-                <img src="../../assets/images/ghost_in_the_shell_2026_backgrounds/background_05.jpg" alt="Ghost in the Shell (2026) - Background 05">
-                <figcaption>A bridge crossing into an empire of steel.</figcaption>
-            </figure>
-            <figure class="article-image">
-                <img src="../../assets/images/ghost_in_the_shell_2026_backgrounds/background_06.jpg" alt="Ghost in the Shell (2026) - Background 06">
-                <figcaption>Devoid of human life, the man-made world turns spectral.</figcaption>
-            </figure>
-            <figure class="article-image">
-                <img src="../../assets/images/ghost_in_the_shell_2026_backgrounds/background_07.jpg" alt="Ghost in the Shell (2026) - Background 07">
-                <figcaption>The miracle of a new day, bathing an alien landscape in gold.</figcaption>
-            </figure>
-        </div>
-
-        <footer>
-            <p id="footer-date"></p>
-        </footer>
-
+        <script src="../../assets/scripts/image-pagination.js" defer></script>
         <script src="../../assets/scripts/date.js" defer></script>
+        <script src="../../assets/scripts/theme-switcher.js" defer></script>
     </body>
 </html>

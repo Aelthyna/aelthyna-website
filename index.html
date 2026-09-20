@@ -32,78 +32,82 @@
         <link rel="icon" type="image/png" sizes="64x64" href="assets/icon/favicon-64.png">
 
         <link rel="icon" href="assets/icon/favicon.ico">
-        
-        <script>
-            const lastUpdated = "September 16, 2026";
-        </script>
     </head>
 
     <body>
-        <header>
-            <p id="header-date"></p>
+        <header class="site-header">
+            <button id="theme-switcher">Switch Theme</button>
+
+            <div class="title-area">
+                <h1 class="fira-code-bold site-title">
+                    <a href="index.html" class="title-link"><em>A Moment's Thought</em></a>
+                </h1>
+                <div class="title-separator"></div>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <!--<li>
+                        <a class="nav-label tooltip" href="index.html">
+                            Home
+                            <span class="tooltiptext">Return to the homepage</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-label tooltip" href="articles.html">
+                            Articles
+                            <span class="tooltiptext">Go to the articles section</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-label tooltip" href="gallery.html">
+                            Gallery
+                            <span class="tooltiptext">Go to the gallery section</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-label tooltip" href="about.html">
+                            About
+                            <span class="tooltiptext">Go to the about section</span>
+                        </a>
+                    </li>-->
+                    <li><a class="nav-label" href="index.html">Home</a></li>
+                    <li><a class="nav-label" href="articles.html">Articles</a></li>
+                    <li><a class="nav-label" href="gallery.html">Gallery</a></li>
+                    <li><a class="nav-label" href="about.html">About</a></li>
+                </ul>
+            </nav>
         </header>
 
-        <div class="title-area">
-            <h1 class="fira-code-bold site-title">
-                <a href="index.html" class="title-link"><em>A Moment's Thought</em></a>
-            </h1>
-            <div class="title-separator"></div>
+        <div class="content-wrapper">
+            <div class="content-box">
+                <h2>Greetings, I am <em>Aelthyna</em>.</h2>
+
+                <p>
+                    Thank you for paying a visit to my little corner of the web. What you
+                    see here is a kind of digital personal diary, a safe haven for all
+                    the little things I feel like preserving. If you wish, you can read
+                    more about me in the About section.
+                </p>
+
+                <p>
+                    Following is a list of the ten most recent articles I have posted
+                    on my website.
+                </p>
+
+                <section id="home-feed"></section>
+
+                <figure id="home-theme-figure" class="article-image">
+                    <img id="home-theme-image" alt="">
+                    <figcaption id="home-theme-haiku"></figcaption>
+                </figure>
+            </div>
+
+            <footer class="footer-box">
+                <span id="footer-updated"></span>
+                <span id="footer-date"></span>
+            </footer>
         </div>
-
-        <nav class="main-nav">
-            <ul>
-                <!--<li>
-                    <a class="nav-label tooltip" href="index.html">
-                        Home
-                        <span class="tooltiptext">Return to the homepage</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-label tooltip" href="articles.html">
-                        Articles
-                        <span class="tooltiptext">Go to the articles section</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-label tooltip" href="gallery.html">
-                        Gallery
-                        <span class="tooltiptext">Go to the gallery section</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-label tooltip" href="about.html">
-                        About
-                        <span class="tooltiptext">Go to the about section</span>
-                    </a>
-                </li>-->
-                <li><a class="nav-label" href="index.html">Home</a></li>
-                <li><a class="nav-label" href="articles.html">Articles</a></li>
-                <li><a class="nav-label" href="gallery.html">Gallery</a></li>
-                <li><a class="nav-label" href="about.html">About</a></li>
-            </ul>
-        </nav>
-
-        <div class="content-box">
-            <h2>Greetings, I am <em>Aelthyna</em>.</h2>
-
-            <p>
-                Thank you for paying a visit to my little corner of the web. What you
-                see here is a kind of digital personal diary, a safe haven for all
-                the little things I feel like preserving. If you wish, you can read
-                more about me in the About section.
-            </p>
-
-            <p>
-                Following is a list of the ten most recent articles I have posted
-                on my website.
-            </p>
-
-            <section id="home-feed"></section>
-        </div>
-
-        <footer>
-            <p id="footer-date"></p>
-        </footer>
 
         <script>
             const projects = [];
@@ -116,5 +120,6 @@
         <script src="assets/scripts/thoughts.js" defer></script>
         <script src="assets/scripts/homefeed.js" defer></script>
         <script src="assets/scripts/date.js" defer></script>
+        <script src="assets/scripts/theme-switcher.js" defer></script>
     </body>
 </html>

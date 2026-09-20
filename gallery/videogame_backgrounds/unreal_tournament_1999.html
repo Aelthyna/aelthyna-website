@@ -32,73 +32,76 @@
         <link rel="icon" type="image/png" sizes="64x64" href="../../assets/icon/favicon-64.png">
 
         <link rel="icon" href="../../assets/icon/favicon.ico">
-        
-        <script>
-            const lastUpdated = "September 13, 2026";
-        </script>
     </head>
 
     <body>
-        <header>
-            <p id="header-date"></p>
+        <header class="site-header">
+            <button id="theme-switcher">Switch Theme</button>
+
+            <div class="title-area">
+                <h1 class="fira-code-bold site-title">
+                    <a href="../../index.html" class="title-link"><em>A Moment's Thought</em></a>
+                </h1>
+                <div class="title-separator"></div>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a class="nav-label" href="../../index.html">Home</a></li>
+                    <li><a class="nav-label" href="../../articles.html">Articles</a></li>
+                    <li><a class="nav-label" href="../../gallery.html">Gallery</a></li>
+                    <li><a class="nav-label" href="../../about.html">About</a></li>
+                </ul>
+            </nav>
         </header>
 
-        <div class="title-area">
-            <h1 class="fira-code-bold site-title">
-                <a href="../../index.html" class="title-link"><em>A Moment's Thought</em></a>
-            </h1>
-            <div class="title-separator"></div>
+        <div class="content-wrapper">
+            <div class="content-box">
+                <div class="title-area">
+                    <h2>Backgrounds from Unreal Tournament (1999)</h2>
+                    <a href="../videogame_backgrounds.html" class="back-button">(Return to Previous Page)</a>
+                </div>
+
+                <p>
+                    As anyone who is into old first-person shooters knows, the first
+                    iteration of the Unreal Engine feels utterly different from its successors,
+                    and part of the reason is the unique and strangely magical feeling of its
+                    depictions of a digital world. While other engines such as the one powering Quake
+                    opted for simple, low-resolution bitmaps, the Unreal Engine went all in for
+                    colorful, highly detailed skies, often sprinkled with animated clouds and background
+                    detail reminiscent of the three-dimensional skyboxes Valve's Source engine became
+                    famous for.
+                </p>
+
+                <figure class="article-image">
+                    <img src="../../assets/images/unreal_tournament_1999_backgrounds/background_01.jpg" alt="Unreal Tournament (1999) - Background 01">
+                    <figcaption>Na Pali Haven from the original Unreal.</figcaption>
+                </figure>
+                <figure class="article-image">
+                    <img src="../../assets/images/unreal_tournament_1999_backgrounds/background_02.jpg" alt="Unreal Tournament (1999) - Background 02">
+                    <figcaption>Another view of Na Pali Haven.</figcaption>
+                </figure>
+                <figure class="article-image">
+                    <img src="../../assets/images/unreal_tournament_1999_backgrounds/background_03.jpg" alt="Unreal Tournament (1999) - Background 03">
+                    <figcaption>A light in the abyss.</figcaption>
+                </figure>
+                            <figure class="article-image">
+                    <img src="../../assets/images/unreal_tournament_1999_backgrounds/background_04.jpg" alt="Unreal Tournament (1999) - Background 04">
+                    <figcaption>Is it dawn or dusk?</figcaption>
+                </figure>
+                <figure class="article-image">
+                    <img src="../../assets/images/unreal_tournament_1999_backgrounds/background_05.jpg" alt="Unreal Tournament (1999) - Background 05">
+                    <figcaption>A surreal fuchsia sky.</figcaption>
+                </figure>
+            </div>
+
+            <footer class="footer-box">
+                <span id="footer-updated"></span>
+                <span id="footer-date"></span>
+            </footer>
         </div>
-
-        <nav class="main-nav">
-            <ul>
-                <li><a class="nav-label" href="../../index.html">Home</a></li>
-                <li><a class="nav-label" href="../../articles.html">Articles</a></li>
-                <li><a class="nav-label" href="../../gallery.html">Gallery</a></li>
-                <li><a class="nav-label" href="../../about.html">About</a></li>
-            </ul>
-        </nav>
-
-        <div class="content-box">
-            <h2>Backgrounds from Unreal Tournament (1999)</h2>
-
-            <p>
-                As anyone who is into old first-person shooters knows, the first
-                iteration of the Unreal Engine feels utterly different from its successors,
-                and part of the reason is the unique and strangely magical feeling of its
-                depictions of a digital world. While other engines such as the one powering Quake
-                opted for simple, low-resolution bitmaps, the Unreal Engine went all in for
-                colorful, highly detailed skies, often sprinkled with animated clouds and background
-                detail reminiscent of the three-dimensional skyboxes Valve's Source engine became
-                famous for.
-            </p>
-
-            <figure class="article-image">
-                <img src="../../assets/images/unreal_tournament_1999_backgrounds/background_01.jpg" alt="Unreal Tournament (1999) - Background 01">
-                <figcaption>Na Pali Haven from the original Unreal.</figcaption>
-            </figure>
-            <figure class="article-image">
-                <img src="../../assets/images/unreal_tournament_1999_backgrounds/background_02.jpg" alt="Unreal Tournament (1999) - Background 02">
-                <figcaption>Another view of Na Pali Haven.</figcaption>
-            </figure>
-            <figure class="article-image">
-                <img src="../../assets/images/unreal_tournament_1999_backgrounds/background_03.jpg" alt="Unreal Tournament (1999) - Background 03">
-                <figcaption>A light in the abyss.</figcaption>
-            </figure>
-                        <figure class="article-image">
-                <img src="../../assets/images/unreal_tournament_1999_backgrounds/background_04.jpg" alt="Unreal Tournament (1999) - Background 04">
-                <figcaption>Is it dawn or dusk?</figcaption>
-            </figure>
-            <figure class="article-image">
-                <img src="../../assets/images/unreal_tournament_1999_backgrounds/background_05.jpg" alt="Unreal Tournament (1999) - Background 05">
-                <figcaption>A surreal fuchsia sky.</figcaption>
-            </figure>
-        </div>
-
-        <footer>
-            <p id="footer-date"></p>
-        </footer>
 
         <script src="../../assets/scripts/date.js" defer></script>
+        <script src="../../assets/scripts/theme-switcher.js" defer></script>
     </body>
 </html>

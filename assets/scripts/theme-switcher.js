@@ -6,7 +6,7 @@ const homeThemeContent = {
         haiku: ""
     },
     "theme-pastel-pink": {
-        src: "assets/images/home/pensive.jpg",
+        src: "assets/images/home/lamp.jpg",
         haiku: ""
     },
     "theme-pastel-green": {
